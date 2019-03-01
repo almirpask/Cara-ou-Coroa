@@ -9,7 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "randomSide" {
+            print("essa memo")
+//            let vcd = segue.destination as! CoinViewController
+//            vcd.randomNumber = Int(arc4random_uniform(2))
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
